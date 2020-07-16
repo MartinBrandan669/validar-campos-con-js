@@ -1,0 +1,299 @@
+html {
+    box-sizing: border-box;
+    font-size: 65%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #011627;
+}
+
+.contenedor {
+    max-width: 90rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3.8rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+h4 {
+    font-size: 3.4rem;
+    margin: 0;
+}
+
+h5 {
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+h6 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.boton {
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    color: #fdfffc;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+.btn_hover2:hover {
+    background-color: transparent;
+}
+
+.btn_inicio {
+    background-color: #2ec4b6;
+    border: 1.5px solid #2ec4b6;
+    margin-right: 1rem;
+}
+
+.btn_ingreso {
+    background-color: #e71d36;
+    border: 1.5px solid #e71d36;
+}
+
+.btn_registro {
+    background-color: #4361ee;
+    border: 1.5px solid #4361ee;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.centrado {
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    border: 1px solid #fdfffc;
+    border-radius: 3rem;
+}
+
+.contenido_izq,
+.contenido_der {
+    border: 1px solid #fdfffc;
+    width: 50rem;
+    height: 50rem;
+    position: relative;
+}
+
+.contenido_izq h2,
+.contenido_der h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    color: #fdfffc;
+}
+
+.contenido_izq {
+    border-right: none;
+    border-radius: 3rem 0 0 3rem;
+    background-color: #2ec4b6;
+    display: none;
+}
+
+.contenido_der {
+    border-left: none;
+    border-radius: 0 3rem 3rem 0;
+    background-color: #e71d36;
+    display: none;
+}
+
+.close {
+    background-color: #fdfffc;
+    border: 2px solid #011627;
+    color: #011627;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100%;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.8rem;
+    position: absolute;
+    top: -0.5em;
+    transition: all 0.3s ease-in-out;
+}
+
+.close:hover {
+    background-color: #011627;
+    border: 1.5px solid #fdfffc;
+    color: #fdfffc;
+}
+
+.close_registro {
+    right: -0.5em;
+    z-index: 1;
+    display: none;
+}
+
+.close_inicio {
+    left: -0.5em;
+    z-index: 1;
+    display: none;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.icono {
+    color: #011627;
+    background-color: #7aeee2;
+    border: 2px solid #011627;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.texto {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 3px solid transparent;
+}
+
+.exito {
+    border: 3px solid #4361ee;
+}
+
+.error {
+    border: 3px solid #d62828;
+}
+
+.campo {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.visibility {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
+.visibility_on {
+    visibility: visible;
+    color: grey;
+}
+
+.visibility_off {
+    visibility: hidden;
+    color: #011627;
+}
+
+.remember {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.checkbox {
+    margin-right: 1rem;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.ingreso {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.dibujo_inicio,
+.dibujo_registro {
+    border: 1px solid #011627;
+    width: 45rem;
+    height: 50rem;
+    position: absolute;
+    top: 0em;
+    z-index: 1;
+}
+
+.dibujo_inicio {
+    border-right: none;
+    background-color: #011627;
+    border-radius: 3rem 0 0 3rem;
+    z-index: -3;
+}
+
+.dibujo_registro {
+    border-left: none;
+    background-color: #011627;
+    border-radius: 0 3rem 3rem 0;
+    right: 0;
+    z-index: -3;
+}
+
+.dibujo_empresa {
+    width: 89.5rem;
+    height: 50rem;
+    border-radius: 3rem;
+    position: absolute;
+    background-color: #011627;
+    top: 1;
+    z-index: 0;
+}

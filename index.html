@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Validar Campos</title>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="boton">
+            <a href="#" class="btn btn_inicio btn_hover">inicio</a>
+            <a href="#" class="btn btn_registro btn_hover">registro</a>
+        </div>
+
+        <div class="centrado">
+
+            <div class="contenido">
+                <div class="dibujo_empresa"></div>
+
+                <a href="#" class="close close_registro">X</a>
+                <a href="#" class="close close_inicio">X</a>
+
+                <div class="contenido_izq">
+                    <div class="dibujo_inicio"></div>
+
+                    <h2>inicia sesión</h2>
+                    <div class="formulario">
+                        <form action="#" class="inicio">
+                            <div class="campo">
+                                <label for="usuario" class="icono"><i class="far fa-envelope"></i></label>
+                                <input type="email" id="usuario" placeholder="correo electronico" class="texto">
+                            </div>
+
+                            <div class="campo">
+                                <label for="contraseña" class="icono"><i class="fas fa-lock"></i></label>
+                                <input type="password" id="contraseña" placeholder="contraseña" class="texto">
+                                <i class="fas fa-eye visibility visibility_on"></i>
+                                <i class="fas fa-eye-slash visibility visibility_off"></i>
+                            </div>
+
+                            <div class="remember">
+                                <input type="checkbox" class="checkbox">
+                                <p>Recuerdame</p>
+                            </div>
+
+                            <div class="ingreso">
+                                <input type="submit" value="inicia sesión" class="btn btn_ingreso">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contenido_der">
+                    <div class="dibujo_registro"></div>
+
+                    <h2>registrate</h2>
+                    <div class="formulario">
+                        <form action="#" class="inicio">
+                            <div class="campo">
+                                <label for="nombre" class="icono"><i class="fas fa-user"></i></label>
+                                <input type="email" id="nombre" placeholder="nombre y apellido" class="texto">
+                            </div>
+
+                            <div class="campo">
+                                <label for="usuario_registro" class="icono"><i class="far fa-envelope"></i></label>
+                                <input type="email" id="usuario_registro" placeholder="correo electronico" class="texto">
+                            </div>
+
+                            <div class="campo">
+                                <label for="contraseña_registro" class="icono"><i class="fas fa-unlock"></i></label>
+                                <input type="password" id="contraseña_registro" placeholder="contraseña" class="texto">
+                                <i class="fas fa-eye visibility visibility_on"></i>
+                                <i class="fas fa-eye-slash visibility visibility_off"></i>
+                            </div>
+
+                            <div class="campo">
+                                <label for="confirm_contraseña" class="icono"><i class="fas fa-lock"></i></label>
+                                <input type="password" id="confirm_contraseña" placeholder="confirma contraseña" class="texto">
+                                <i class="fas fa-eye visibility visibility_on"></i>
+                                <i class="fas fa-eye-slash visibility visibility_off"></i>
+                            </div>
+
+
+                            <div class="ingreso">
+                                <input type="submit" value="registrate" class="btn btn_registro">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d14814298d.js" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
